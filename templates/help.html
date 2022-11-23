@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>ヘルプ</h2>
+<ul>
+    <li><h3>・使い方</h3>
+        <p>開始日から終了日までの期間について、日付と候補時間の組み合わせを一覧で出力するプログラムです。
+            平日と土日・祝日それぞれで異なる候補時間帯を設定できます。（候補時間帯が空欄の場合は日付のみが出力されます。）<br></p>
+        <p>スケジュール調整サービスの<a href="https://densuke.biz/event" target="_blank">伝助</a>にコピー＆ペーストすることで、簡単に日程調整フォームを作成できます。</p>
+    </li>
+    <li><h3>・対応ブラウザ</h3>
+        <ul>
+            <li>Google Chrome 20~</li>
+            <li>Google Chrome Android</li>
+            <li>Microsoft Edge 12~</li>
+            <li>Firefox 57~</li>
+            <li>Firefox for Android 57~</li>
+            <li>Safari 14.1~</li>
+            <li>Safari on iOS 5~</li>
+            <li>Webview Android</li>
+        </ul>
+        <p>上記以外のブラウザをお使いの場合、開始日と終了日はISO 8601形式 (YYYY-MM-DD) で入力してください。</p>
+    </li>
+    <li><h3>・困ったときは</h3>
+        <p>解決できないエラーを発見した場合は、<a href="/contact">コンタクトフォーム</a>からご連絡ください。</p>
+    </li>
+</ul>
+{% endblock %}

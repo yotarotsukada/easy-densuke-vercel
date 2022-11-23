@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="/"><h1>伝助時短プログラム</h1></a>
+        <nav>
+            <div id="pc-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="hamburger">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div id="sp-menu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="wrapper">
+        {% block content %}
+        <!-- ここにメインコンテンツを書く -->
+        {% endblock %}
+    </div>
+    <div id="footer">
+        <p>© 2021 yotarotsukada</p>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

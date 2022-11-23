@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>お問い合わせ</h2>
+<form action="/contact" method="POST">
+    <div class="content">
+        <label>
+            <p>お名前 (必須)<br>
+            <input type="text" class="date" name="name" required></p>
+        </label>
+    </div>
+    <div class="content">
+        <label>
+            <p>内容 (必須)<br>
+            <textarea name="text" cols="30" rows="4" required></textarea></p>
+        </label>
+    </div>
+    <p>※現在準備中につき、送信できません。</p>
+    <input type="submit" value="送信する">
+</form>
+{% endblock %}
